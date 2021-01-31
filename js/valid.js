@@ -59,7 +59,8 @@ function validateName(ev) {
 function validateEmail(ev) {
   let err = document.querySelector("#email + .error");
   let emailVal = document.querySelector("#email").value;
-  let regex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/gi;
+  let regex = /^[a-z\d.!#$%&'*+/=?^_`{|}~-]+@[a-z\d-]+(?:\.[a-z\d-]+)*$/gi;
+  ///^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/gi;
 
   if (emailVal !== "" && regex.test(emailVal)) {
     err.textContent = "";
