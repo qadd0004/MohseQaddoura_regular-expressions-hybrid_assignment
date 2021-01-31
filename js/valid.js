@@ -40,6 +40,8 @@ function validateForm(ev) {
   }
 }
 
+//In all the following functions use of event.target.value was replaced by the actual DOM object value property to avoid a submit event error
+
 function validateName(ev) {
   //validate the full name input with a regular expression
   let err = document.querySelector("#fullname + .error");
