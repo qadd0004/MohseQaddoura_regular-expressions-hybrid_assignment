@@ -36,7 +36,7 @@ function validateForm(ev) {
     ev.preventDefault();
     alert("Check all your entries and resubmit");
   } else {
-    alert("Your data has been submitted successfuly!");
+    alert("Your data has been submitted successfully!");
   }
 }
 
