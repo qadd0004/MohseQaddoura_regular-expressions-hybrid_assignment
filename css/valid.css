@@ -1,0 +1,87 @@
+:root {
+    --dark-blue: hsl(240deg 100% 50%);
+    --light-blue: hsl(240deg 100% 95%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+html{
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'Montserrat', BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+
+header {
+    text-align: center;
+}
+
+form {
+    padding: 1rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    min-width: 400px;
+    max-width: 50vw;
+    margin: 4rem auto;
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+    background-color: rgb(185, 242, 251);
+}
+
+p {
+     padding: 0.25rem 0 1rem;
+}
+
+label {
+    display: block;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+input {
+    margin:0;
+    font-size: 1rem;
+    padding: 0.2rem 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid  var(--dark-blue);
+    background-color: var(--light-blue);
+}
+
+.required::before {
+    content: "*";
+    color: red;
+}
+
+#prov {
+    margin:0;
+    font-size: 1.1rem;
+    padding: 0.2rem 1rem;
+    width: 40%;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.submit {
+    margin-top: 0.75rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 0.25rem 1rem;
+    background-color: #455566;
+    color: #fff;
+    border-radius: 5px;
+}
